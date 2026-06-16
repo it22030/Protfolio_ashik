@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashik Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "gzHefujRP7otpc_QG",
+      });
+    })();
+  </script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Ashikullah</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto nav-links align-items-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item d-none"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item ms-lg-3">
+            <a href="#contact" class="email-btn text-decoration-none">
+              <i class="fas fa-envelope"></i> Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Assalamu-Alaikum.<br>
+              I'm <span class="highlight">Md. Ashikullah</span>.
+            </h1>
+            <p class="hero-subtitle">Student of ICT, MBSTU | Problem Solver | ML Enthusiast</p>
+            <p class="hero-description">
+              I'm a passionate Machine Learning enthusiast and problem solver who loves transforming data into
+              intelligent solutions.
+              I enjoy building AI-driven models, exploring data science, and solving complex problems using algorithms
+              and analytical thinking.
+              Let's create something impactful together!
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-duration="1200">
+          <div class="hero-image-container">
+            <div class="main-image-wrapper">
+              <img src="pic/ashik.jpg" alt="Ashikullah Profile" class="hero-image">
+              <div class="gradient-overlay"></div>
+            </div>
+
+            <div class="floating-card stats-card d-none d-md-flex">
+              <div class="stats-icon" style="font-size: 2rem; color: #17a2b8;">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="stats-info">
+                <h6 class="mb-0 fw-bold">Codeforces</h6>
+                <small class="text-muted d-block">400+ Solved</small>
+                <small class="text-muted fw-bold">Rating: <span id="cf-rating-hero"
+                    class="text-warning">Loading...</span></small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container d-none">
+    <h2 class="section-title" data-aos="fade-up">About Me</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6" data-aos="fade-right">
+        <h3 class="fw-bold mb-3">Ashikullah</h3>
+        <p class="text-muted" style="font-size: 1.1rem; line-height: 1.8;">
+          I am a student of Information and Communication Technology (ICT) at Mawlana Bhashani Science and Technology
+          University (MBSTU).
+          I am passionate about learning new things and continuously improving my skills.
+        </p>
+      </div>
+      <div class="col-md-6 text-center" data-aos="fade-left">
+        <div class="main-image-wrapper" style="height: 350px; width: 80%; margin: 0 auto;">
+          <img src="pic/ashik.jpg" class="hero-image" alt="About Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="container bg-light py-5 rounded-4 my-5 shadow-sm">
+    <h2 class="section-title" data-aos="fade-up">Education</h2>
+    <div class="text-center mb-4">
+      <img src="pic/education.webp" alt="college" width="80" class="edu-icon mb-3">
+    </div>
+
+    <div class="row px-lg-4">
+      <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-right">
+        <div class="accordion" id="eduAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="edu-head1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#edu1"
+                aria-expanded="true">
+                🎓 B.Sc(Engr.)
+              </button>
+            </h2>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="edu-head2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#edu2"
+                aria-expanded="false">
+                🏫 HSC
+              </button>
+            </h2>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="edu-head3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#edu3"
+                aria-expanded="false">
+                🏫 SSC
+              </button>
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8" data-aos="fade-left">
+        <div class="accordion" id="contentAccordion">
+          <!-- B.Sc -->
+          <div id="edu1" class="accordion-collapse collapse show" data-bs-parent="#contentAccordion">
+            <div class="card shadow-sm p-4 border-0 border-start border-4 border-primary rounded-end">
+              <h4 class="fw-bold text-primary">MBSTU, Tangail</h4>
+              <p class="mb-1"><strong>B.Sc in ICT</strong></p>
+              <p class="text-muted mb-1"><i class="far fa-calendar-alt"></i> 2025 - Present</p>
+              <span class="badge bg-primary d-inline-block" style="width: fit-content;">Status: Ongoing</span>
+            </div>
+          </div>
+          <!-- HSC -->
+          <div id="edu2" class="accordion-collapse collapse" data-bs-parent="#contentAccordion">
+            <div class="card shadow-sm p-4 border-0 border-start border-4 border-success rounded-end">
+              <div class="d-flex align-items-center mb-3">
+                <img src="pic/hsc.jpg" alt="college" width="50" class="edu-icon me-3 rounded">
+                <h5 class="fw-bold text-success mb-0">Higher Secondary School Certificate (HSC)</h5>
+              </div>
+              <p class="mb-1"><strong>Shah Mukdum College, Rajshahi</strong></p>
+              <div class="row mt-3">
+                <div class="col-sm-6">
+                  <p class="mb-1"><b>Board:</b> Rajshahi</p>
+                  <p class="mb-1"><b>Duration:</b> 2018 - 2020</p>
+                  <p class="mb-1 text-success fw-bold"><b>GPA:</b> 5.00 / 5.00</p>
+                </div>
+                <div class="col-sm-6">
+                  <p class="mb-1"><b>Group:</b> Science</p>
+                  <ul class="text-muted ps-3 mb-0" style="font-size: 0.9rem;">
+                    <li>Higher Mathematics</li>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                    <li>Biology</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SSC -->
+          <div id="edu3" class="accordion-collapse collapse" data-bs-parent="#contentAccordion">
+            <div class="card shadow-sm p-4 border-0 border-start border-4 border-warning rounded-end">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://cdn-icons-png.flaticon.com/512/201/201818.png" alt="school" width="50"
+                  class="edu-icon me-3">
+                <h5 class="fw-bold text-warning mb-0">Secondary School Certificate (SSC)</h5>
+              </div>
+              <p class="mb-1"><strong>Chakkitti School and College, Chakkitti</strong></p>
+              <div class="row mt-3">
+                <div class="col-sm-6">
+                  <p class="mb-1"><b>Board:</b> Rajshahi</p>
+                  <p class="mb-1"><b>Duration:</b> 2016 - 2018</p>
+                  <p class="mb-1 text-warning fw-bold"><b>GPA:</b> 5.00 / 5.00</p>
+                </div>
+                <div class="col-sm-6">
+                  <p class="mb-1"><b>Group:</b> Science</p>
+                  <ul class="text-muted ps-3 mb-0" style="font-size: 0.9rem;">
+                    <li>Higher Mathematics</li>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                    <li>Biology</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="container">
+    <h2 class="section-title" data-aos="fade-up">Experience</h2>
+    <div class="timeline mt-5">
+      <div class="timeline-container timeline-left" data-aos="fade-right">
+        <div class="timeline-content">
+          <h5 class="fw-bold text-primary">No professional experience at this time</h5>
+          <p class="text-muted mb-0">Looking for opportunities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container my-5">
+    <div class="text-center mb-5" data-aos="zoom-in">
+      <h2 class="fw-bold" style="font-size: 2.5rem; color: #1a1a2e;">Skills & Expertise</h2>
+      <p class="text-muted fs-5">Technologies and tools I work with daily</p>
+    </div>
+    <div class="row g-4">
+      <!-- Programming Languages Card -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card border-0 shadow-sm rounded-4 h-100 p-4">
+          <h4 class="fw-bold mb-4 d-flex align-items-center" style="color: #1a1a2e;">
+            <i class="fas fa-code me-3" style="color: #6366f1;"></i> Programming Languages
+          </h4>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1">
+              <label class="fw-bold text-dark">C / C++</label><span class="small"
+                style="color: #6366f1; font-weight: 600;">85%</span>
+            </div>
+            <div class="progress"
+              style="height: 8px; background-color: #e2e8f0; overflow: hidden; border-radius: 10px;">
+              <div class="progress-bar" style="width: 85%; background-color: #6366f1; border-radius: 10px;"></div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1">
+              <label class="fw-bold text-dark">HTML / CSS</label><span class="small"
+                style="color: #6366f1; font-weight: 600;">55%</span>
+            </div>
+            <div class="progress"
+              style="height: 8px; background-color: #e2e8f0; overflow: hidden; border-radius: 10px;">
+              <div class="progress-bar" style="width: 55%; background-color: #6366f1; border-radius: 10px;"></div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1">
+              <label class="fw-bold text-dark">Java</label><span class="small"
+                style="color: #6366f1; font-weight: 600;">60%</span>
+            </div>
+            <div class="progress"
+              style="height: 8px; background-color: #e2e8f0; overflow: hidden; border-radius: 10px;">
+              <div class="progress-bar" style="width: 60%; background-color: #6366f1; border-radius: 10px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Frameworks & Libraries Card -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="card border-0 shadow-sm rounded-4 h-100 p-4">
+          <h4 class="fw-bold mb-4 d-flex align-items-center" style="color: #1a1a2e;">
+            <i class="fas fa-layer-group me-3" style="color: #6366f1;"></i> Frameworks & Libraries
+          </h4>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1">
+              <label class="fw-bold text-dark">JavaFx</label><span class="small"
+                style="color: #6366f1; font-weight: 600;">50%</span>
+            </div>
+            <div class="progress"
+              style="height: 8px; background-color: #e2e8f0; overflow: hidden; border-radius: 10px;">
+              <div class="progress-bar" style="width: 50%; background-color: #6366f1; border-radius: 10px;"></div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1">
+              <label class="fw-bold text-dark">SpringBoot</label><span class="small"
+                style="color: #6366f1; font-weight: 600;">50%</span>
+            </div>
+            <div class="progress"
+              style="height: 8px; background-color: #e2e8f0; overflow: hidden; border-radius: 10px;">
+              <div class="progress-bar" style="width: 50%; background-color: #6366f1; border-radius: 10px;"></div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1">
+              <label class="fw-bold text-dark">Database Management</label><span class="small"
+                style="color: #6366f1; font-weight: 600;">50%</span>
+            </div>
+            <div class="progress"
+              style="height: 8px; background-color: #e2e8f0; overflow: hidden; border-radius: 10px;">
+              <div class="progress-bar" style="width: 50%; background-color: #6366f1; border-radius: 10px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="container mt-5" data-aos="fade-up">
+    <h2 class="section-title mb-5">Achievements</h2>
+    <div class="row g-4">
+
+      <!-- Card 1: Problems Solved -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="achievement-card">
+          <div class="ach-icon-box" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="ach-content">
+            <h5 class="mb-2">650+ Problems Solved total</h5>
+            <p class="text-muted mb-3">Solved over 650 algorithmic challenges across multiple platforms.</p>
+            <span class="ach-badge bg-light text-primary"
+              style="background-color: #eef2ff !important; color: #4f46e5 !important;">Algorithms</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Contest Rating -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="achievement-card">
+          <div class="ach-icon-box" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+            <i class="fas fa-medal"></i>
+          </div>
+          <div class="ach-content">
+            <h5 class="mb-2">Contest Rating <span id="cf-rating">1040</span></h5>
+            <p class="text-muted mb-3">Achieved strong rating in programming contests with consistent performance.</p>
+            <span class="ach-badge bg-light text-success"
+              style="background-color: #f0fdf4 !important; color: #16a34a !important;">Codeforces</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Projects Complete -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="achievement-card">
+          <div class="ach-icon-box" style="background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <div class="ach-content">
+            <h5 class="mb-2">15+ Projects Complete</h5>
+            <p class="text-muted mb-3">Successfully delivered 15+ functional web and software applications.</p>
+            <span class="ach-badge bg-light text-info"
+              style="background-color: #eff6ff !important; color: #2563eb !important;">Development</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Competitive Programming -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="achievement-card">
+          <div class="ach-icon-box" style="background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="ach-content">
+            <h5 class="mb-2">Competitive Programming</h5>
+            <p class="text-muted mb-3">Active participant in global coding competitions, constantly pushing limits.</p>
+            <span class="ach-badge bg-light text-warning"
+              style="background-color: #fffbeb !important; color: #d97706 !important;">Skills</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5: Hackathon Winner -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="achievement-card">
+          <div class="ach-icon-box" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <div class="ach-content">
+            <h5 class="mb-2">Hackathon</h5>
+            <p class="text-muted mb-3">Won multiple hackathons building innovative solutions under strict time pressure.
+            </p>
+            <span class="ach-badge bg-light text-danger"
+              style="background-color: #fef2f2 !important; color: #dc2626 !important;">Innovation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6: Open Source Contributor -->
+      <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="achievement-card">
+          <div class="ach-icon-box" style="background: linear-gradient(135deg, #5ee7df 0%, #b490ca 100%);">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="ach-content">
+            <h5 class="mb-2">Open Source Contributor</h5>
+            <p class="text-muted mb-3">Active contributor to open source projects with multiple community pull requests.
+            </p>
+            <span class="ach-badge bg-light text-secondary"
+              style="background-color: #f8fafc !important; color: #475569 !important;">GitHub</span>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+
+    <h3 class="text-center mt-5 mb-4 fw-bold" style="color: #1a1a2e; font-size: 2rem;" data-aos="fade-up">Competitive
+      Programming Platforms</h3>
+    <div class="row g-4 mt-2">
+      <div class="col-md-4 col-sm-6" data-aos="flip-left">
+        <div class="edu-card d-flex flex-column justify-content-center align-items-center text-center"
+          style="background: linear-gradient(135deg, #0052cc 0%, #003d99 100%);">
+          <i class="fas fa-code fs-1 mb-2"></i>
+          <h5 class="fw-bold mb-1">Codeforces</h5>
+          <p class="mb-0 small">Problems Solved: <span class="fs-5 fw-bold">400+</span></p>
+          <p class="mb-0 small">Rating: <span class="fs-6 fw-bold text-warning" id="cf-rating-dynamic">Loading...</span>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6" data-aos="flip-up">
+        <div class="edu-card d-flex flex-column justify-content-center align-items-center text-center"
+          style="background: linear-gradient(135deg, #28a745 0%, #208738 100%);">
+          <i class="fas fa-laptop-code fs-1 mb-2"></i>
+          <h5 class="fw-bold">Beecrowd</h5>
+          <p class="mb-0">Problems Solved: <span class="fs-4 fw-bold">100+</span></p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6" data-aos="flip-right">
+        <div class="edu-card d-flex flex-column justify-content-center align-items-center text-center"
+          style="background: linear-gradient(135deg, #6c757d 0%, #495057 100%);">
+          <i class="fas fa-terminal fs-1 mb-2"></i>
+          <h5 class="fw-bold">UVA</h5>
+          <p class="mb-0">Problems Solved: <span class="fs-4 fw-bold">60+</span></p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6" data-aos="flip-left">
+        <div class="edu-card d-flex flex-column justify-content-center align-items-center text-center"
+          style="background: linear-gradient(135deg, #6f42c1 0%, #59359a 100%);">
+          <i class="fas fa-lightbulb fs-1 mb-2"></i>
+          <h5 class="fw-bold">LightOJ</h5>
+          <p class="mb-0">Problems Solved: <span class="fs-4 fw-bold">40+</span></p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6" data-aos="flip-up">
+        <div class="edu-card d-flex flex-column justify-content-center align-items-center text-center"
+          style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+          <i class="fab fa-free-code-camp fs-1 mb-2"></i>
+          <h5 class="fw-bold">LeetCode</h5>
+          <p class="mb-0">Problems Solved: <span class="fs-4 fw-bold">10+</span></p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6" data-aos="flip-right">
+        <div class="edu-card d-flex flex-column justify-content-center align-items-center text-center"
+          style="background: linear-gradient(135deg, #d63384 0%, #a82766 100%);">
+          <i class="fas fa-utensils fs-1 mb-2"></i>
+          <h5 class="fw-bold">CodeChef</h5>
+          <p class="mb-0">Problems Solved: <span class="fs-4 fw-bold">12</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container bg-light py-5 rounded-4 my-5 shadow-sm">
+    <h2 class="section-title" data-aos="zoom-in">Projects</h2>
+    <div class="row g-4 px-lg-4">
+
+      <!-- Project 1 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card project-card h-100 border-0">
+          <div class="position-relative project-img-wrapper">
+            <img src="pic/pj1.png" class="card-img-top" alt="Online Delivery System">
+            <div class="project-overlay d-flex align-items-center justify-content-center">
+              <a href="https://github.com/it22030/Project_3.1" target="_blank"
+                class="btn btn-light rounded-pill px-4 py-2 fw-bold text-primary shadow hover-scale">
+                <i class="fas fa-eye me-2"></i> View Project
+              </a>
+            </div>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title fw-bold mb-0">Online Delivery System</h5>
+              <a href="https://github.com/it22030/Project_3.1" target="_blank"
+                class="text-dark fs-4 project-github-link"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="card-text text-muted mb-4">(Like: Foodpanda) Built using Java and Android/XML.</p>
+            <div class="d-flex flex-wrap gap-2 mt-auto">
+              <span class="badge project-tag">Java</span>
+              <span class="badge project-tag">Android</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card project-card h-100 border-0">
+          <div class="position-relative project-img-wrapper">
+            <img src="pic/pj2.avif" class="card-img-top" alt="Flappy Bird Game">
+            <div class="project-overlay d-flex align-items-center justify-content-center">
+              <a href="https://github.com/it22030/Flappy_Game" target="_blank"
+                class="btn btn-light rounded-pill px-4 py-2 fw-bold text-primary shadow hover-scale">
+                <i class="fas fa-eye me-2"></i> View Project
+              </a>
+            </div>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title fw-bold mb-0">Flappy Bird Game</h5>
+              <a href="https://github.com/it22030/Flappy_Game" target="_blank"
+                class="text-dark fs-4 project-github-link"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="card-text text-muted mb-4">A desktop-based classic flappy bird clone game built with Java.</p>
+            <div class="d-flex flex-wrap gap-2 mt-auto">
+              <span class="badge project-tag">Java</span>
+              <span class="badge project-tag">Game Dev</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card project-card h-100 border-0">
+          <div class="position-relative project-img-wrapper">
+            <img src="pic/pj3.png" class="card-img-top" alt="Personal Portfolio">
+            <div class="project-overlay d-flex align-items-center justify-content-center">
+              <a href="https://sites.google.com/view/ashikullah/home" target="_blank"
+                class="btn btn-light rounded-pill px-4 py-2 fw-bold text-primary shadow hover-scale">
+                <i class="fas fa-eye me-2"></i> View Project
+              </a>
+            </div>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title fw-bold mb-0">Personal Portfolio</h5>
+              <a href="https://sites.google.com/view/ashikullah/home" target="_blank"
+                class="text-dark fs-4 project-github-link"><i class="fas fa-link"></i></a>
+            </div>
+            <p class="card-text text-muted mb-4">A complete personal portfolio site detailing skills and projects.</p>
+            <div class="d-flex flex-wrap gap-2 mt-auto">
+              <span class="badge project-tag">HTML</span>
+              <span class="badge project-tag">CSS</span>
+              <span class="badge project-tag">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="card project-card h-100 border-0">
+          <div class="position-relative project-img-wrapper">
+            <img src="pic/pj4.png" class="card-img-top" alt="Web Chat Application">
+            <div class="project-overlay d-flex align-items-center justify-content-center">
+              <a href="https://github.com/it22030/ChatApp/tree/main/spring-boot-websocket-chat-app-main/spring-boot-websocket-chat-app-main/src"
+                target="_blank" class="btn btn-light rounded-pill px-4 py-2 fw-bold text-primary shadow hover-scale">
+                <i class="fas fa-eye me-2"></i> View Project
+              </a>
+            </div>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title fw-bold mb-0">Web Chat Application</h5>
+              <a href="https://github.com/it22030/ChatApp/tree/main/spring-boot-websocket-chat-app-main/spring-boot-websocket-chat-app-main/src"
+                target="_blank" class="text-dark fs-4 project-github-link"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="card-text text-muted mb-4">Real-time web chat application powered by WebSockets.</p>
+            <div class="d-flex flex-wrap gap-2 mt-auto">
+              <span class="badge project-tag">Spring Boot</span>
+              <span class="badge project-tag">Java</span>
+              <span class="badge project-tag">WebSocket</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card project-card h-100 border-0">
+          <div class="position-relative project-img-wrapper">
+            <img src="pic/pic5.jpeg" class="card-img-top" alt="Personal Portfolio">
+            <div class="project-overlay d-flex align-items-center justify-content-center">
+              <a href="https://education-office-management.onrender.com/" target="_blank"
+                class="btn btn-light rounded-pill px-4 py-2 fw-bold text-primary shadow hover-scale">
+                <i class="fas fa-eye me-2"></i> View Project
+              </a>
+            </div>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title fw-bold mb-0">Education-Office Management System</h5>
+              <a href="https://education-office-management.onrender.com/" target="_blank"
+                class="text-dark fs-4 project-github-link"><i class="fas fa-link"></i></a>
+            </div>
+            <p class="card-text text-muted mb-4">In this system, we have implemented a comprehensive solution for
+              managing educational offices. It includes features for user authentication, role-based access control
+              (admins, teachers, students), and an intuitive dashboard for seamless operations.</p>
+            <div class="d-flex flex-wrap gap-2 mt-auto">
+              <span class="badge project-tag">HTML</span>
+              <span class="badge project-tag">CSS</span>
+              <span class="badge project-tag">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card project-card h-100 border-0">
+          <div class="position-relative project-img-wrapper">
+            <img src="pic/pic6.png" class="card-img-top" alt="Personal Portfolio">
+            <div class="project-overlay d-flex align-items-center justify-content-center">
+              <a href="https://it22030.github.io/Cipher-project/" target="_blank"
+                class="btn btn-light rounded-pill px-4 py-2 fw-bold text-primary shadow hover-scale">
+                <i class="fas fa-eye me-2"></i> View Project
+              </a>
+            </div>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title fw-bold mb-0">Cipher Portfolio</h5>
+              <a href="https://it22030.github.io/Cipher-project/" target="_blank"
+                class="text-dark fs-4 project-github-link"><i class="fas fa-link"></i></a>
+            </div>
+            <p class="card-text text-muted mb-4">A cipher is a method used to convert plain text (normal readable text)
+              into secret text (hidden or coded text).
+            </p>
+            <div class="d-flex flex-wrap gap-2 mt-auto">
+              <span class="badge project-tag">HTML</span>
+              <span class="badge project-tag">CSS</span>
+              <span class="badge project-tag">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container mb-5">
+    <h2 class="section-title" data-aos="zoom-in">Contact Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card shadow-lg border-0 rounded-4 p-4 p-md-5" data-aos="fade-up">
+          <form class="row g-4" action="https://formsubmit.co/mdashikullaha@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_autoresponse"
+              value="Thanks for contacting me! I have received your message and will reply very soon.">
+
+            <div class="col-md-6">
+              <input type="text" name="name" placeholder="Your Name" class="form-control form-control-lg bg-light"
+                required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" name="email" placeholder="Your Email" class="form-control form-control-lg bg-light"
+                required>
+            </div>
+            <div class="col-12">
+              <textarea name="message" class="form-control form-control-lg bg-light" placeholder="Your Message" rows="5"
+                required></textarea>
+            </div>
+            <div class="col-12 text-center mt-4">
+              <button type="submit" class="email-btn mx-auto d-inline-flex" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <h4 class="fw-bold mb-3">Md. Ashikullah</h4>
+      <div class="d-flex justify-content-center gap-3 mb-4">
+        <a href="#" class="text-white text-decoration-none fs-4"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white text-decoration-none fs-4"><i class="fab fa-github"></i></a>
+        <a href="#" class="text-white text-decoration-none fs-4"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p class="text-muted mb-1"><i class="fas fa-envelope"></i> mdashikullaha@gmail.com | <i class="fas fa-phone"></i>
+        +880 1863273923</p>
+      <p class="text-muted small mt-3 mb-0">© 2025 Ashikullah. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      offset: 100,
+      once: true
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function () {
+      const navbar = document.getElementById('mainNav');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Scrollspy logic for active nav link
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-links .nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - 200)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Fetch Codeforces Rating
+    fetch('https://codeforces.com/api/user.info?handles=ashikullah')
+      .then(response => response.json())
+      .then(data => {
+        if (data.status === 'OK') {
+          const rating = data.result[0].rating || 'Unrated';
+          const rank = data.result[0].rank || '';
+          const htmlContent = `${rating} <span style="font-size:0.8rem; text-transform:capitalize;">(${rank})</span>`;
+          document.getElementById('cf-rating').innerHTML = htmlContent;
+          if (document.getElementById('cf-rating-dynamic')) {
+            document.getElementById('cf-rating-dynamic').innerHTML = htmlContent;
+          }
+          if (document.getElementById('cf-rating-hero')) {
+            document.getElementById('cf-rating-hero').innerHTML = htmlContent;
+          }
+        } else {
+          document.getElementById('cf-rating').innerText = '1040';
+          if (document.getElementById('cf-rating-dynamic')) {
+            document.getElementById('cf-rating-dynamic').innerText = '1040';
+          }
+          if (document.getElementById('cf-rating-hero')) {
+            document.getElementById('cf-rating-hero').innerText = '1040';
+          }
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching CF rating:', error);
+        document.getElementById('cf-rating').innerText = '1040';
+        if (document.getElementById('cf-rating-dynamic')) {
+          document.getElementById('cf-rating-dynamic').innerText = '1040';
+        }
+        if (document.getElementById('cf-rating-hero')) {
+          document.getElementById('cf-rating-hero').innerText = '1040';
+        }
+      });
+  </script>
+
+</body>
+
+</html>
